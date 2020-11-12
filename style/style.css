@@ -146,6 +146,7 @@ header ul li a:hover {
   width: 33.3333%;
   padding: 10px 15px;
   box-sizing: border-box;
+  display: block
 }
 
 .grid-item img {
