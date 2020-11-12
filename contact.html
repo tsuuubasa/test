@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HOME</title>
+<meta name="description" content="webデザイナー佐藤翼のホームページです。">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style/style.css">
+<link rel="icon" type="image/png" href="images/mylogo-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/mylogo-icon.png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+<header>
+<!-- 中央にロゴを設置したナビゲーションバー開始 -->
+<nav>
+  <div class="drawer">
+  <!-- drawer ここから-->
+    <h1><img src="images/mylogo-min.png" alt="ヘッダーの佐藤翼自身のロゴマークです。"></h1>
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+  <!-- drawer ここまで-->
+  </div>
+
+<div class="nav-wrap">
+<!-- menuここから -->
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="works.html">Works</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<!-- menuここまで -->
+</div>
+</nav>
+<!-- 中央にロゴを設置したナビゲーションバー終了 -->
+</header>
+
+<div class="content">
+<!-- コンテンツ開始 -->
+<div class="page-title">
+<!-- ページ見出し開始 -->
+<i class="far fa-id-card"></i>
+<h2>Contact<span>お問い合わせ</span></h2>
+<!-- ページ見出し終了 -->
+</div>
+
+<div class="page-syoukai">
+<!-- ページ紹介開始 -->
+<h3>お問い合わせの際は</h3>
+<p>下記メールフォームより送信してください。<br>
+※個人情報の取り扱いについては、「<a href="../privacy-policy/">プライバシーポリシー</a>」ページをご確認ください。</p>
+<!-- ページ紹介終了 -->
+</div>
+
+
+<!-- ▼ メールフォーム : 開始-->
+<form>
+<div class="contact">
+<!-- 手紙風レイアウトフレックス -->
+<div class="form-left">
+<p><strong>お名前 <span class="is-required">※必須</span></strong><br>
+<input name="name" type="text" required></p>
+<p><strong>メールアドレス <span class="is-required">※必須</span></strong><br>
+<input class="mail-input" name="email" type="email" required></p>
+<p><strong>電話番号</strong><br>
+<input name="tel" type="tel" pattern="[\d\-]*" required></p>
+</div>
+<div class="form-right">
+<p><strong>お問い合わせ内容 <span class="is-required">※必須</span></strong><br>
+<textarea name="message"></textarea></p>
+</div>
+<!-- 手紙風レイアウトフレックス -->
+</div>
+<p class="open">
+<input type="submit" class="c-button" value="確認画面へ">
+</p>
+</form>
+<!-- ▲ メールフォーム : 終了-->
+
+
+<!-- コンテンツ終了 -->
+</div>
+<footer>
+<!-- フッター開始 -->
+<p>バナーからサイト、ロゴマークなどの制作や各種プロモーション活動の支援などWeb制作を中心に活動中、<br>
+その他グラフィックデザインなども行っております。<br>
+あなたの求める「こうしたい」を叶え、デザインにより魅力をさらに引き出します。<br>
+メールやInstagramのDMにて気軽にご相談ください。
+</p>
+
+<nav class="renraku">
+<!-- 連絡ここから -->
+<ul>
+<li><a href="contact.html"><i class="far fa-envelope"></i><span>Mail</span></a></li>
+<li><a href="https://www.instagram.com/tsuu_.photo/"><i class="fab fa-instagram"></i><span>DM</span></a></li>
+</ul>
+<!-- 連絡ここまで -->
+</nav>
+<img src="images/mylogo.png" alt="佐藤翼自身のロゴマークです。">
+<hr>
+<small>&copy;Tsubasa Sato 2020</small>
+<!-- フッター終了 -->
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HOME</title>
+<meta name="description" content="webデザイナー佐藤翼のホームページです。">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style/style.css">
+<link rel="icon" type="image/png" href="images/mylogo-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/mylogo-icon.png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+<header>
+<!-- 中央にロゴを設置したナビゲーションバー開始 -->
+<nav>
+  <div class="drawer">
+  <!-- drawer ここから-->
+    <h1><img src="images/mylogo-min.png" alt="ヘッダーの佐藤翼自身のロゴマークです。"></h1>
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+  <!-- drawer ここまで-->
+  </div>
+
+<div class="nav-wrap">
+<!-- menuここから -->
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="works.html">Works</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<!-- menuここまで -->
+</div>
+</nav>
+<!-- 中央にロゴを設置したナビゲーションバー終了 -->
+</header>
+
+<div class="content works-page">
+<!-- コンテンツ開始 -->
+<div class="page-title">
+<!-- ページ見出し開始 -->
+<i class="far fa-edit"></i>
+<h2>Past Works<span>制作実績</span></h2>
+<!-- ページ見出し終了 -->
+</div>
+
+<div class="page-syoukai">
+<!-- ページ紹介開始 -->
+<h3>こんなものが作れます</h3>
+<p>以下の制作実績は、架空のお店情報やターゲット設定から考え、Webサイトのデザイン＆コーディングを行ったものです。<br>
+また、既存のサイトの再デザインなどを行うことにより、日々デザイン力や想像力を養っております。
+</p>
+<!-- ページ紹介終了 -->
+</div>
+
+<div id="filter" class="button-group">
+<!-- フィルターボタン開始 -->
+<button href="" class="allitem" data-filter="*">all</button>
+<button href="" data-filter=".food">Food</button>
+<button href="" data-filter=".school">School</button>
+<!-- フィルターボタン終了 -->
+</div>
+
+<div id="container" class="grid">
+<!-- グリッドコンテンツ開始 -->
+  <div class="grid-item food">
+  <a class="js-modal-open" href="" data-target="modal-ichiko"><img src="images/ichiko.jpg" alt="制作した「いち娘」ページのスクリーンショットです。"></a></div>
+  <div class="grid-item school">
+  <a class="js-modal-open" href="" data-target="modal-human"><img src="images/human.jpg" alt="制作した「ヒューマンアカデミー立川校」ページのスクリーンショットです。"></a>
+  </div>
+  <div class="grid-item food">
+  <a class="js-modal-open" href="" data-target="modal-cocoro"><img src="images/cocoro.jpg" alt="制作した「パン屋cocoro」ページのスクリーンショットです。"></a></div>
+ <!-- グリッドコンテンツ終了 -->
+</div>
+
+<!-- モーダル内のコンテンツここから -->
+<div id="modal-ichiko" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+  <a class="js-modal-close" href=""><i class="fas fa-times"></i></a>
+  <div class="modal-ex">
+  <a href=""><img src="images/ichiko.jpg" alt="制作した「いち娘」ページのスクリーンショットです。"></a>
+  <h4><a href="">朝摘み苺 いち娘</a></h4>
+  <p>Design / Adobe XD / Photoshop / Brackets / HTML,CSS</p>
+  <ul class="process">
+  <li><a href="frame/ichiko.jpg" target="_blank">ワイヤーフレーム</a></li>
+  </ul>
+  <p>高価なブランド苺という設定の為、品の高い配色やフォントを使用することを意識
+  </p>
+  </div><!-- mordal-ex -->
+  </div><!-- modal__content -->
+</div><!-- js-modal -->
+
+<div id="modal-human" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+  <a class="js-modal-close" href=""><i class="fas fa-times"></i></a>
+  <div class="modal-ex">
+  <a href=""><img src="images/human.jpg" alt="制作した「ヒューマンアカデミー立川校」リデザインページのスクリーンショットです。"></a>
+  <h4>ヒューマンアカデミー立川校 リデザイン</h4>
+    <p>2つ目のモーダルコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。
+    </p>
+  </div><!-- modal-ex -->
+  </div><!-- modal__content -->
+</div><!-- js-modal -->
+
+<!-- モーダル内のコンテンツここまで -->
+<!-- コンテンツ終了 -->
+</div>
+<footer>
+<!-- フッター開始 -->
+<p>バナー制作からサイト制作、ロゴマークや各種プロモーション活動の支援などWeb制作を中心に活動中、<br>
+その他グラフィックデザインなども行っております。<br>
+あなたの求める「こうしたい」を叶え、デザインにより魅力をさらに引き出します。<br>
+メールやInstagramのDMにて気軽にご相談ください。
+</p>
+
+<nav class="renraku">
+<!-- 連絡ここから -->
+<ul>
+<li><a href="contact.html"><i class="far fa-envelope"></i><span>Mail</span></a></li>
+<li><a href="https://www.instagram.com/tsuu_.photo/"><i class="fab fa-instagram"></i><span>DM</span></a></li>
+</ul>
+<!-- 連絡ここまで -->
+</nav>
+<img src="images/mylogo.png" alt="佐藤翼自身のロゴマークです。">
+<hr>
+<small>&copy;Tsubasa Sato 2020</small>
+<!-- フッター終了 -->
+</footer>
+</body>
+</html>

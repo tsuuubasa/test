@@ -1,0 +1,1055 @@
+@charset 'UTF-8';
+
+/*フォント設定*/
+body {
+  font-family: "M PLUS 1p",sans-serif;
+  background-color: #fff;
+  margin: 0;
+  color: #4A4645;
+}
+
+body p {
+  font-size: 15px;
+}
+
+.page-title h2,
+.gaiyou .gaiyou-bun h2,
+.workflow h2,
+.profile .profile-bun h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*コンテンツの設定*/
+.content {
+  background-color: #ebebe8;
+  padding-bottom: 20px
+}
+
+/*ヘッダーの設定*/
+header {
+  width: 100vw;
+}
+
+header nav {
+  width: 100vw;
+  height: 65px;
+  background-color: #fff;
+}
+
+header nav .drawer h1 {
+  text-align: center;
+  height: 65px;
+}
+
+header nav h1 img {
+  width: 65px;
+  opacity: 0.8;
+}
+
+header nav .nav-wrap .nav {
+  margin: 0;
+}
+
+header nav .nav-wrap .nav li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.4);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all  0.5s ease;
+}
+
+header ul li a:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/*ページタイトルの設定*/
+.page-title {
+  color: #539982;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.page-title i {
+  font-size: 40px;
+}
+
+.page-title h2 {
+  font-size: 25px;
+  color: #539982;
+  margin-top: 10px;
+  font-size: 40px
+}
+
+.page-title h2 span {
+  display: block;
+  font-size: 15px;
+  color: #5d627b;
+}
+
+/*ページ紹介の設定*/
+.page-syoukai {
+  width: 60%;
+  text-align: center;
+  padding: 0.5em 1em;
+  margin: 50px auto 0 auto;
+  color: #000;
+  border-top: solid 3px #5d627b;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+.page-syoukai h3 {
+  font-size: 18px
+}
+
+/*フィルターボタンの設定*/
+.button-group {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.button-group button {
+  border: none;
+  font-size: 14px;
+  background-color: #ebebe8;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all  0.6s ease;
+}
+
+#filter button:link { text-decoration:underline; color: #539982;}
+#filter button:visited { text-decoration:none; color: #539982;}
+#filter button:active { text-decoration:none; color: #539982;}
+#filter button:hover { text-decoration:none; color: #539982;}
+#filter button:focus { outline:0; color:#539982;}
+ 
+#filter .active {
+    color: #539982
+}
+#filter .active:link { text-decoration:none; color: #539982;}
+#filter .active:visited { text-decoration:none; color: #539982;}
+#filter .active:active { text-decoration:none; color: #539982;}
+#filter .active:hover { text-decoration:none; color: #539982;}
+
+/*グリッドコンテンツの設定*/
+.grid {
+  margin-top: 40px;
+}
+
+.grid-item {
+  width: 33.3333%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+/*モーダルウィンドウの設定*/
+.modal{
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: scroll;
+  z-index: 2
+}
+.modal__bg{
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  z-index: 2
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  margin: 5% 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  z-index: 3
+}
+
+.modal__content h4 {
+  font-size: 16px;
+}
+
+.modal__content h4 a {
+  color: #4A4645;
+  text-decoration: none
+}
+
+.modal__content h4 a:hover {
+  text-decoration: underline
+}
+
+.modal__content .modal-ex {
+  width: 70%;
+  margin: auto
+}
+
+.modal__content .modal-ex img {
+  width: 100%;
+  border: solid 1px #eaeaea;
+}
+
+.modal-ex .process {
+  list-style: none;
+  display: flex;
+  justify-content: space-around
+}
+
+.modal-ex .process li a {
+  text-decoration: none;
+  color: #539982;
+}
+
+.js-modal-close:visited {
+  color: #808080
+}
+
+
+
+/*フッターの設定*/
+.works-page {
+  padding-bottom: 100px
+}
+
+footer {
+  text-align: center;
+  padding-top: 0px;
+  border-top: 1.5px dashed #539982;
+  background-color: #ebebe8;
+  position: relative;
+  z-index: 1
+}
+
+.home-footer {
+  width: 96%;
+  margin: auto;
+}
+
+footer:before {
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  bottom: 14px;
+  left: -40%;
+  padding: 0 3px;
+  color: #539982;
+  font-size: 18px;
+  z-index: 1
+}
+
+footer p {
+  width: 80%;
+  margin: 50px auto 0 auto;
+  font-size: 14px;
+}
+
+footer .renraku ul {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 25px auto 0 auto;
+  align-items: center;
+  padding-bottom: 12px;
+
+}
+
+footer .renraku ul li {
+  list-style: none;
+  border: solid 1px #303030;
+  border-radius: 10px;
+  margin-right: 40px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all  0.4s ease;
+}
+
+footer .renraku ul li:hover {
+  background-color: #539982;
+  border: 1px solid #539982;
+}
+
+footer .renraku ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .renraku ul li a:hover {
+  color: #ebebe8;
+}
+
+footer .renraku ul li i {
+  font-size: 40px;
+  padding: 0 60px 5px 60px;
+}
+
+footer .renraku ul li span {
+display: block;
+padding: 0 60px 0 60px
+}
+
+footer img {
+  width: 40px;
+}
+
+footer hr {
+  background-color: #ebebe8;
+  border-top: 1.2px solid #539982;
+  width: 60%;
+  margin-bottom: 14px
+}
+
+footer small {
+  font-size: 10px;
+  display: block
+}
+
+.home-small {
+  background-color: #fff;
+}
+
+/* indexの設定 */
+.home-content {
+  margin: 0 2%;
+  background-color: #ebebe8;
+  overflow: hidden;
+}
+
+/*ファーストビューの設定*/
+.first-view {
+  background-image: url("../images/work-speace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.mask {
+  height: calc(100vh - 65px);
+  width: 100vw;
+  margin: auto;
+  vertical-align: bottom
+}
+
+.st0 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  enable-background: new;
+}
+
+.st1 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  enable-background: new;
+}
+
+.st2 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 11;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  enable-background: new;
+}
+
+.st3 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  enable-background: new;
+}
+
+/* 概要の設定 */
+.gaiyou {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh
+}
+
+.gaiyou-reverse {
+  flex-direction: row-reverse;
+}
+
+.gaiyou .gaiyou-bun {
+  width:37vw;
+  margin-bottom: 100px;
+}
+
+.gaiyou .gaiyou-bun h2 {
+  font-size: 40px;
+}
+
+.gaiyou .gaiyou-bun h2 span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.gaiyou .gaiyou-bun p {
+  font-size: 14px;
+}
+
+.gaiyou .gaiyou-image img {
+  width: 35vw;
+}
+
+.gaiyou .gaiyou-button {
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #539982;
+  background-color: #ebebe8;
+  transition: .4s;
+}
+
+.gaiyou .gaiyou-button:hover {
+  background: #539982;
+  color: #ebebe8;
+}
+
+/*ワークフローの設定*/
+.workflow {
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  
+}
+
+.workflow h2 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  color: #85C39D;
+  margin-bottom: 50px;
+}
+
+.workflow h2 span {
+  font-size: 16px;
+  display: block;
+  color: #000;
+}
+
+.workflow .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 80px auto 0 auto;
+}
+
+.workflow .icons i {
+  border: solid 1px #85C39D;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
+  color: #85C39D
+}
+
+.workflow .icons .icons-in {
+  width: 25%;
+  padding: 0 1rem
+}
+
+.workflow .icons .icons-in p {
+  font-size: 13px;
+}
+
+.workflow .icons .icons-in h3 {
+  font-weight: normal;
+  font-size: 13px
+}
+
+.workflow .icons .icons-in h3 span {
+  display: none;
+}
+
+.workflow .workflow-button {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #85C39D;
+  border: solid 2px #85C39D;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 60px;
+}
+
+.workflow .workflow-button:hover {
+  background: #85C39D;
+  color: white;
+}
+
+/*プロフィールページの設定*/
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center
+}
+
+.profile .profile-image {
+  width: 59%;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.profile .profile-bun {
+  background-color: #fff;
+  width: 40%;
+  text-align: center;
+  padding: 35px 0 35px 0;
+}
+
+.profile:nth-child(4) .profile-bun {
+  background-color: #539982;
+}
+
+.profile .profile-bun p {
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+  line-height: 1.8
+}
+
+.profile .profile-bun h2 {
+  font-size: 40px;
+  margin: 0
+}
+
+.profile .profile-bun h2 span {
+  font-weight: normal;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px
+}
+
+.profile .profile-image .img-min {
+  display: none
+}
+
+/*スキルの設定*/
+.skill {
+  background-color: #d2cbb4;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+  
+}
+
+.skill h2 {
+  margin-top: 0;
+  font-weight: normal
+}
+
+.skill .skill-in {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto
+}
+
+.skill .skill-in div img {
+  width: 80px
+}
+
+.skill .skill-in div span {
+  display: block
+}
+
+/*コンタクトページの設定*/
+form {
+  background-color: #fff;
+  width: 80%;
+  margin: auto
+}
+
+form p {
+  margin: 30px 0 0 0;
+}
+
+form .contact {
+  display: flex;
+  margin: 50px auto 0 auto;
+  justify-content: space-around;
+  padding: 50px;
+  font-family:"M PLUS Rounded 1c";
+}
+
+form .contact p strong .is-required {
+  color: #539982;
+  font-size: 12px;
+}
+
+form .contact .form-left p strong {
+  line-height: 3
+}
+
+form .contact p input,
+form .contact p textarea {
+  border: none;
+  font-weight: normal;
+  width: 80%;
+  font-size: 16px;
+  font-family:"M PLUS Rounded 1c";
+}
+
+form .contact p input {
+  border-bottom: 1px solid rgba(83,153,130,0.5);
+  
+}
+
+form .contact p textarea {
+  height: 408px;
+  width: 100%;
+  background-image: url(../images/form.png);
+  line-height: 2;
+  border: none;
+}
+
+form .contact p .mail-input {
+  font-size: 14px
+}
+
+form .contact p input:focus,
+form .contact p textarea:focus {
+  outline: 0
+}
+
+form .contact p input: {
+  background-color: #fff
+}
+
+.contact .form-left {
+  width: 25%;
+}
+
+.contact .form-right {
+  width: 70%
+}
+
+form .open {
+  width: 10%;
+  margin: auto;
+  padding-bottom: 20px
+}
+
+form .c-button {
+  border: none;
+  background-color: #539982;
+  color: #fff;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  font-family:"M PLUS Rounded 1c";
+}
+
+/*########## 859px以下 ##########*/
+@media (max-width: 859px){
+/* 概要の設定 */
+.gaiyou {
+  flex-flow: column-reverse;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.gaiyou .gaiyou-bun {
+  width:70%;
+}
+
+.gaiyou .gaiyou-bun h2 {
+  font-size: 28px;
+}
+
+.gaiyou .gaiyou-bun h2 span {
+  font-size: 11px
+}
+
+.giyou .gaiyou-bun p {
+  font-size: 13px;
+}
+
+.gaiyou .gaiyou-bun .gaiyou-button {
+  font-size: 13px
+}
+
+.gaiyou .gaiyou-image img {
+  margin-top: 20vh;
+}
+
+/*ワークフローの設定*/
+.workflow .hitokoto {
+  width: 70vw;
+  margin: auto;
+  font-size: 14px
+}
+
+.workflow .icons {
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.workflow .icons .icons-in {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 1.2rem;
+}
+
+.workflow .icons .icons-in h3 span {
+  display: inline;
+}
+
+/*プロフィールページの設定*/
+.profile {
+  display: block;
+  width: 100%;
+  padding: 0
+}
+
+.profile .profile-bun {
+  width: 100%;
+}
+
+.profile .profile-bun h2 {
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+
+.profile .profile-bun h2 span {
+  font-size: 14px
+}
+
+.profile .profile-bun p {
+  padding: 0 0 10px 0;
+  line-height: 1.8;
+  font-size: 13px
+}
+
+.profile .profile-image {
+  margin: auto;
+  width: 100%
+}
+
+.profile .profile-image .img-min {
+  display: block;
+}
+
+.profile .profile-image .img-max {
+  display: none;
+}
+
+.skill h2 {
+  font-size: 16px
+}
+
+.skill .skill-in div img {
+  width: 60px
+}
+
+.skill .skill-in div span {
+  font-size: 12px
+}
+
+/*コンタクトページの設定*/
+form .contact {
+  display: block;
+  margin: 50px auto 0 auto;
+  padding: 50px;
+}
+
+.contact .form-left {
+  width: 70%;
+}
+
+.contact .form-left,
+.contact .form-right {
+  margin: auto
+}
+
+}
+
+/*########## 649px以下 ##########*/
+@media (max-width: 649px){
+body {
+  margin: 0;
+}
+
+/*ヘッダーナビの設定*/
+header {
+  height: 60px;
+}
+
+header nav {
+  height: 60px;
+  position: absolute;
+}
+
+header nav .drawer{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ height: 60px;
+}
+
+header nav .drawer h1 {
+  margin: 0;
+  height: 60px;
+}
+
+header nav .drawer h1 img {
+  margin-left: 30px;
+  height: 60px;
+  width: auto
+}
+
+/*ナビゲーション部分*/
+header nav .nav-wrap{
+  text-align:center;
+  display: none;
+}
+
+header nav .nav-wrap ul {
+  padding: 0;
+  margin: 0;
+}
+
+header nav .nav-wrap ul li {
+  background-color: #fff;
+  display: block;
+  z-index: 10;
+  padding: 10px 0;
+}
+
+header nav .nav-wrap ul li a {
+  font-weight: bold;
+  padding: 0;
+  color: #333;
+  text-decoration: none;
+}
+
+header nav .nav-wrap ul li a:hover{
+  color: #85c39d;
+  border-bottom: 1px dashed #CCC;
+}
+
+/*OPEN時の動き*/
+header nav .nav-wrap.open {
+  display: block;
+  position: relative;
+}
+
+/*トグルボタンのスタイルを指定*/
+.nav-button {
+  display: block;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 3;
+  right:40px;
+}
+ 
+.nav-button span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 3px #333;
+  border-radius: 10px;
+  -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+  transition: .35s ease-in-out;			/*変化の速度を指定*/
+}
+ /*各ボーダー少しずつずらす*/
+.nav-button span:nth-child(1) {
+    top:5px;
+}
+ .nav-button span:nth-child(2) {
+    top: 18px;
+}
+ .nav-button span:nth-child(3) {
+    top: 32px;
+}
+.nav-button.active span:nth-child(1) {
+    top: 18px;
+/* 1番目のspanをマイナス45度に */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.nav-button.active span:nth-child(2),
+.nav-button.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*ページ紹介の設定*/
+.page-syoukai {
+  width: 80%
+}
+
+.page-syoukai p {
+  font-size: 14px
+}
+
+
+/* グリッドコンテンツの設定 */
+.grid-item {
+  width: 100%
+}
+
+/*フッターの設定*/
+footer p {
+  font-size: 13px
+}
+
+footer .renraku ul li i {
+  font-size: 30px;
+  padding: 0 30px 5px 30px;
+}
+
+footer .renraku ul li span {
+font-size: 15px;
+padding: 0 30px 0 30px
+}
+
+/*indexの設定*/
+.first-view {
+  background-image: url("../images/work-speace-tate.jpg");
+}
+
+.mask {
+  height: calc(100vh - 60px);
+}
+
+/* 概要の設定 */
+.gaiyou .gaiyou-bun p {
+  font-size: 13px
+}
+
+.gaiyou .gaiyou-image img {
+  width: 50vw;
+}
+
+/*ワークフローの設定*/
+.workflow .hitokoto {
+  font-size: 13px;
+}
+
+.workflow .icons .icons-in {
+  width: 100%;
+}
+
+.workflow .icons .icons-in p {
+  width: 70%;
+  margin: auto;
+}
+
+}
+/*########## 649px以上～959px以下##########*/
+@media (min-width: 649px) and (max-width: 959px){
+/*グリッドコンテンツの設定*/
+.grid-item {
+  width: 50%;
+}
+
+/*フッターの設定*/
+footer .renraku ul li i {
+  font-size: 30px;
+  padding: 0 50px 5px 50px;
+}
+
+footer .renraku ul li span {
+font-size: 15px;
+padding: 0 50px 0 50px
+}
+
+}
+/*########## 650px以上 ##########*/
+@media (min-width: 650px){
+body {
+  margin: 0;
+}
+
+header nav {
+  position: relative;
+}
+
+header nav h1 {
+  margin: 0 auto;
+}
+
+header nav ul {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+header nav .nav-wrap .nav {
+  height: 65px
+}
+
+header nav ul li {
+  list-style-type: none;
+  width:  calc( ( 100% - 65px ) / 4);
+  text-align: center;
+}
+
+header ul li:nth-child(3){
+  margin-left: 200px;
+}
+
+}
+/*########## 960px以上 ##########*/
+@media (min-width: 960px){
+/*ページ紹介の設定*/
+.page-syoukai {
+  width: 50%
+}
+
+}
