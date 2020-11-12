@@ -233,7 +233,6 @@ footer {
   border-top: 1.5px dashed #539982;
   background-color: #ebebe8;
   position: relative;
-  z-index: 1
 }
 
 .home-footer {
@@ -250,7 +249,6 @@ footer:before {
   padding: 0 3px;
   color: #539982;
   font-size: 18px;
-  z-index: 1
 }
 
 footer p {
@@ -989,6 +987,12 @@ padding: 0 30px 0 30px
 .workflow .icons .icons-in p {
   width: 70%;
   margin: auto;
+}
+
+/* コンタクトページの設定 */
+form .contact {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 }
