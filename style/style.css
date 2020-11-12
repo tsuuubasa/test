@@ -957,11 +957,11 @@ padding: 0 30px 0 30px
 /*indexの設定*/
 .first-view {
   background-image: url("../images/work-speace-tate.jpg");
-  height: calc(100vh - 200px);
+  height: calc(100vh - 190px);
 }
 
 .mask {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
 }
 
 .mask image {
