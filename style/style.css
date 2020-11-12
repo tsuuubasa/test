@@ -338,6 +338,7 @@ footer small {
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: calc(100vh - 65px);
 }
 
 .mask {
@@ -956,10 +957,15 @@ padding: 0 30px 0 30px
 /*indexの設定*/
 .first-view {
   background-image: url("../images/work-speace-tate.jpg");
+  height: calc(100vh - 60px);
 }
 
 .mask {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
+}
+
+.mask image {
+  height: 
 }
 
 /* 概要の設定 */
