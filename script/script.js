@@ -10,6 +10,8 @@ $container.isotope({
   layoutMode: 'fitRows'
 });
 
+
+
 $('.button-group button').click(function(){
 	$('.button-group .filter-button').removeClass('filter-button');
 	$(this).addClass('filter-button');
@@ -43,7 +45,9 @@ var $setFilter = $('#filter'),
             $(this).addClass('active');
         }
     });
+    $(window).on('load', function() {
     $setFilterAll.click();
+    });
 
 $('.nav-button').on('click',function(){
   if( $(this).hasClass('active') ){
