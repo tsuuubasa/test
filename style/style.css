@@ -935,7 +935,7 @@ header nav .nav-wrap.open {
 /* グリッドコンテンツの設定 */
 .grid-item {
   width: 100%;
-  margin-bottom: 100px
+  margin-bottom: 50px
 }
 
 /*フッターの設定*/
