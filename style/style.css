@@ -1,26 +1,5 @@
 @charset 'UTF-8';
 
-/* iOSでのデフォルトスタイルをリセット */
-input[type="submit"],
-input[type="button"] {
-  border-radius: 0;
-  -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
-  appearance: button;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-input[type="submit"]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration {
-  display: none;
-}
-input[type="submit"]::focus,
-input[type="button"]::focus {
-  outline-offset: -2px;
-}
-
-
 /*フォント設定*/
 body {
   font-family: "M PLUS 1p",sans-serif;
@@ -609,6 +588,27 @@ footer small {
   display: block
 }
 
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+
 /*コンタクトページの設定*/
 form {
   background-color: #fff;
@@ -956,17 +956,17 @@ header nav .nav-wrap.open {
 
 /*フッターの設定*/
 footer p {
-  font-size: 13px
+  font-size: 12px
 }
 
 footer .renraku ul li i {
   font-size: 30px;
-  padding: 0 30px 5px 30px;
+  padding: 0 50px 5px 50px;
 }
 
 footer .renraku ul li span {
 font-size: 15px;
-padding: 0 30px 0 30px
+padding: 0 50px 0 50px
 }
 
 /*indexの設定*/
@@ -977,10 +977,6 @@ padding: 0 30px 0 30px
 
 .mask {
   height: calc(100vh - 300px);
-}
-
-.mask image {
-  height: 
 }
 
 /* 概要の設定 */
