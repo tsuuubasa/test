@@ -152,75 +152,11 @@ header ul li a:hover {
   width: 100%;
 }
 
-/*モーダルウィンドウの設定*/
-.modal{
-  display: none;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: scroll;
-  z-index: 2
+.grid-item p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
 }
-.modal__bg{
-  background: rgba(0,0,0,0.6);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  position: fixed;
-  z-index: 2
-}
-.modal__content{
-  background: #fff;
-  left: 50%;
-  padding: 40px;
-  margin: 5% 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 80%;
-  z-index: 3
-}
-
-.modal__content h4 {
-  font-size: 16px;
-}
-
-.modal__content h4 a {
-  color: #4A4645;
-  text-decoration: none
-}
-
-.modal__content h4 a:hover {
-  text-decoration: underline
-}
-
-.modal__content .modal-ex {
-  width: 70%;
-  margin: auto
-}
-
-.modal__content .modal-ex img {
-  width: 100%;
-  border: solid 1px #eaeaea;
-}
-
-.modal-ex .process {
-  list-style: none;
-  display: flex;
-  justify-content: space-around
-}
-
-.modal-ex .process li a {
-  text-decoration: none;
-  color: #539982;
-}
-
-.js-modal-close:visited {
-  color: #808080
-}
-
-
 
 /*フッターの設定*/
 footer {
@@ -229,11 +165,6 @@ footer {
   border-top: 1.5px dashed #539982;
   background-color: #ebebe8;
   position: relative;
-}
-
-.home-footer {
-  width: 96%;
-  margin: auto;
 }
 
 footer:before {
@@ -314,16 +245,8 @@ footer small {
   display: block
 }
 
-.home-small {
-  background-color: #fff;
-}
-
 /* indexの設定 */
-.home-content {
-  margin: 0 2%;
-  background-color: #ebebe8;
-  overflow: hidden;
-}
+
 
 /*ファーストビューの設定*/
 .first-view {
@@ -387,7 +310,7 @@ footer small {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 90vh
+  height: 80vh
 }
 
 .gaiyou-reverse {
@@ -414,7 +337,12 @@ footer small {
 }
 
 .gaiyou .gaiyou-image img {
-  width: 35vw;
+  width: 40vw;
+  max-width: 450px;
+}
+
+.gaiyou:nth-child(4) .gaiyou-image img {
+  border-radius: 50%;
 }
 
 .gaiyou .gaiyou-button {
