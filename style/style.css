@@ -798,19 +798,18 @@ header nav .nav-wrap ul li {
   background-color: #fff;
   display: block;
   z-index: 10;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 header nav .nav-wrap ul li a {
   font-weight: bold;
-  padding: 0;
+  padding: 15px 40vw;
   color: #333;
   text-decoration: none;
 }
 
 header nav .nav-wrap ul li a:hover{
   color: #85c39d;
-  border-bottom: 1px dashed #CCC;
 }
 
 /*OPEN時の動き*/
